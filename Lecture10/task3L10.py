@@ -13,7 +13,7 @@ c.get()
 
 class Counter:
     
-    def __init__(self, start =int(), stop = int()):
+    def __init__(self, start =0, stop = -1):
         self.start = start
         self.stop = stop
         # self.start += 1
