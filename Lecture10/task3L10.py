@@ -28,7 +28,7 @@ class Counter:
 
 
     def get(self):
-        print(self.start)
+        return self.start
 
 
 
