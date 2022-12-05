@@ -72,14 +72,16 @@ operations={
 
 
 while True:
-    a = input('Choice operator (+,-,*,/,**). Example"1 + 1":').lower().split()
-    # print(a)
+    s = input('Choice operator (+,-,*,/,**). Example"1 + 1":').lower()
+    if s == 'quit':
+        break
+    a = s.split()
     try: 
         len(a)> 3
     except:
         InputFormulaError
-    if a == 'quit':
-        break
+    # if a == 'quit':
+    #     break
     try:
         operation = operations[a[1]]
         number1 = float(a[0])
