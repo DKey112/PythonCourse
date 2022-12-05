@@ -76,11 +76,11 @@ while True:
     if s == 'quit':
         break
     a = s.split()
-    try: 
-        len(a)> 3
-    except:
-        InputFormulaError
+    if len(a) > 3:
+        raise InputFormulaError
+    print(a)
     try:
+        len(a) > 3
         operation = operations[a[1]]
         number1 = float(a[0])
         number2 = float(a[2])
