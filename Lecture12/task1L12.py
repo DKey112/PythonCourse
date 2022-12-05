@@ -80,8 +80,6 @@ while True:
         len(a)> 3
     except:
         InputFormulaError
-    # if a == 'quit':
-    #     break
     try:
         operation = operations[a[1]]
         number1 = float(a[0])
