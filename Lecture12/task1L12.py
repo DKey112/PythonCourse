@@ -85,8 +85,6 @@ while True:
         number1 = float(a[0])
         number2 = float(a[2])
         print('{0:.2f}'.format(operation(number1, number2)))
-    # except InputFormulaError:
-    #     raise InputFormulaError
     except KeyError:
         raise InputOperatorError
     except ValueError:
