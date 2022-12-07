@@ -24,7 +24,7 @@ class Auto:
 
     def use(self):
         self.age += 1
-        print(self.age)
+        return self.age
 
 car = Auto('Volvo',2003,'XC90')
 car.drive()
