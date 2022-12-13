@@ -36,7 +36,7 @@ class Validator:
     
 
     def validate_login(self)-> bool:
-        g = r'^.*(?=.)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).{6,10}$'
+        g = r'^(?=\d*)(?=[a-z]*)(?=[A-Z]*).{6,10}$'
         if (re.match(g, self.login)):
             return True
         else:

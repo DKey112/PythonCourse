@@ -1,0 +1,5 @@
+er1 = EvenRange(7,11)
+# next(er1)
+# next(er1)
+# next(er1)
+# next(er1)

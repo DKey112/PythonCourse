@@ -23,8 +23,9 @@ class MySquareIterator:
             i = self.list[self.index]
         except IndexError:
             raise StopIteration
-        self.index += 1
-        return i**2
+        else:
+            self.index += 1
+            return i**2
 
 lst = [1, 2, 3, 4, 5]
 itr = MySquareIterator(lst)

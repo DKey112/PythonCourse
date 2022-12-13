@@ -34,16 +34,15 @@ class EvenRange:
 
     def __next__(self):
         result=self.start
-        if result < self.end:
+        if result <= self.end:
             self.start += 2
-            print(result)
             return result
         else:
             print('Out of numbers')
             raise StopIteration
 
 
-# er1 = EvenRange(7,11)
+er1 = EvenRange(7,11)
 # next(er1)
 # next(er1)
 # next(er1)
