@@ -28,6 +28,7 @@ class Tracks(BaseModel):
         table_name = 'tracks'
 
 
+
 def tracks():
     s = input('Choose some album: ')
     with db:

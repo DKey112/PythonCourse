@@ -25,6 +25,16 @@
 # FROM albums
 # INNER JOIN (SELECT SUM(UnitPrice) as albumPrice, Albumid FROM tracks);
 #
+# SELECT Title as Name, albumPrice as Price
+# FROM albums
+# INNER JOIN (
+# 	SELECT SUM(UnitPrice) as albumPrice, Albumid
+# 	FROM tracks
+# 	GROUP BY Albumid
+# 	)
+# USING (Albumid)
+#
+#
 #
 #SELECT Name, albumPrice 
 # FROM tracks
