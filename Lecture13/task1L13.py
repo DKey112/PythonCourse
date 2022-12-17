@@ -4,6 +4,8 @@
 имен начинающихся на указанную букву
 '''
 
+
+
 def names_gen(path, later):
     with open (path, 'r') as file:
         for i in file:
