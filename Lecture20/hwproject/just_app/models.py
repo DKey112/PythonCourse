@@ -25,14 +25,14 @@ class Users(models.Model):
     date_register = models.DateField()
 
     def __str__(self) -> str:
-        return f'{self.first_name},{self.last_name}'
+        return f'Имя:{self.first_name},Фамилия:{self.last_name}'
 
 class Category(models.Model):
     category_id = models.IntegerField(primary_key=True)
     category_title = models.TextField()
 
     def __str__(self) -> str:
-        return f'{self.category_title}'
+        return f'Название:{self.category_title}'
 
 
 class Post(models.Model):
@@ -44,4 +44,4 @@ class Post(models.Model):
     post_category_id = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
 
     def __str__(self) -> str:
-        return f'{self.title},{self.date_create},{self.post_category_id}'
+        return f'Название: {self.title}, Дата создания: {self.date_create},Название категории: {self.post_category_id}'
